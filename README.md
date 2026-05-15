@@ -52,3 +52,98 @@ Aucun composant électronique complexe n’est nécessaire : la solution est sim
 - Puissance dissipée : **≈ 31,6 W**
 
 ### Calculs théoriques (loi d’Ohm)
+I = U / R = 12 / 4,5 ≈ 2,67 A
+
+P = U × I = 12 × 2,67 ≈ 32 W
+
+Les mesures réelles sont cohérentes avec la théorie.
+
+---
+
+## 🌡️ Température de panne (estimée sans thermomètre)
+
+| Méthode d’estimation | Résultat |
+|----------------------|----------|
+| Comportement de l’étain (60/40) | Brillant, coule bien sans brûler |
+| Test papier | Brunit sans flamber |
+| Fusion de l’étain plombé | Rapide et fluide |
+
+➡️ **Température estimée : 230 °C – 280 °C**  
+Plage idéale pour l’étain 60/40.
+
+---
+
+## 🔌 Schéma électrique simplifié
+Secteur 230V AC
+│
+▼
+┌──────────────┐
+│ Convertisseur               │
+│ 12V DC / 5A │ (Sloaled)
+└──────┬───────┘
+│
+├────────────┐
+│                                   │
+▼                                  ▼
++12V                          GND
+│                                   │
+│   ┌──────────┘
+│   │
+▼ ▼
+┌───┴───┴───┐
+│ Tige                       │
+│ 4,5 Ω                      │
+│ (panne)                 │
+└───────────┘
+
+> Aucune résistance série ni composant actif n’est nécessaire.
+
+---
+## ✅ Résultats pratiques
+
+| Type de soudure | Résultat |
+|----------------|----------|
+| Fils multibrins (cuivre) | Bonne pénétration, brillance correcte |
+| Plaques époxy simple face | Très bonne adhérence |
+| Plaques bakélite | Soudures propres |
+| Petits composants CMS | Facile, pas d’excès de chaleur |
+| Gros plans de masse / câbles épais | Limite (manque d’inertie thermique) |
+
+---
+
+## ⚠️ Sécurité et bonnes pratiques
+
+- La panne atteint **plus de 200 °C** → support isolant indispensable
+- L’alimentation SELV est **sécurisée** (pas de risque d’électrocution)
+- Laisser refroidir avant rangement
+- Ne pas laisser chauffer sans surveillance prolongée
+- Nettoyer la panne avec éponge humide avant chaque soudure
+- Ne jamais limer la panne (risque de détruire le revêtement)
+
+---
+
+## 🧪 Évolutions possibles (optionnel)
+
+| Modification | Bénéfice |
+|--------------|----------|
+| Ajout d’un interrupteur pied | Sécurité / économie d’énergie |
+| Module PWM entre 12V et tige | Réglage fin de la température |
+| Ajout d’un thermocouple + afficheur | Contrôle précis (pour perfectionnistes) |
+| Alimentation 19 V + résistance série (0,8 Ω / 20 W) | Permet l’étain sans plomb |
+
+---
+
+## 📚 Références utiles
+
+- Loi d’Ohm : \( U = R \times I \)
+- Étain 60/40 : fusion 183 → 190 °C, usage électronique standard
+- Sécurité SELV : Très Basse Tension de Sécurité (< 60 V)
+
+---
+
+## 🙏 Remerciements
+
+Projet réalisé par étapes : mesures, essais, ajustements.  
+Ce document est publié pour aider d’autres bricoleurs à reproduire ou adapter cette solution.
+
+---
