@@ -9,6 +9,7 @@
 # 🔧 Fer à souder DIY – Tige de panini 12V
 
 > **Un fer à souder basse tension, simple, sûr et économique, fabriqué à partir d’une résistance de panini (4,5Ω) et d’une alimentation 12V – 60W.**
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/3ade0e19-2ee6-4a1a-820a-7a2c09e67899" />
 
 ## 📖 Résumé
 
